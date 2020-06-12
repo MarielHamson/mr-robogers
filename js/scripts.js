@@ -23,10 +23,9 @@ const robotese = function(numberInput){
   }
 
 const backwardsRobotese = function(reverseNumberInput){
-
     let reversedRobotArray = [];
   
-    for (let index = reverseNumberInput; index <= 0; index -= 1) {
+    for (let index = reverseNumberInput; index >= 0; index -= 1) {
   
         const str = index.toString();
   
