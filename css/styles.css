@@ -28,7 +28,7 @@
     font-weight: 100;
     position: relative;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
     z-index: 3;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .main .sub-header {
-    min-height: 140px;
+    min-height: 50px;
 }
 
 .main .sub-header,
@@ -58,7 +58,7 @@ p {
   padding-right: 20px;
 }
 
-#numberInput {
+#numberInput, #reverse-number-input {
   display: flex;
 }
 #result {
@@ -68,6 +68,10 @@ p {
 #robot-lang {
     display: none;
 }
+#reversed-result {
+  display: none;
+}
+
 #reversal {
   display: none;
 }

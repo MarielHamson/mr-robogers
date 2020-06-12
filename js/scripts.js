@@ -63,9 +63,12 @@ $(document).ready(function() {
 
   $("#robot-lang-reversed").submit(function(event) {
     event.preventDefault();
-    const reverseNumberInput = $("#reverseNumberInput").val();
+    const reverseNumberInput = $("#reverse-number-input").val();
     const reversedResult = backwardsRobotese(reverseNumberInput);
-    $(".translation-reversed").text("Is this better, " + firstName + "?: " + reversedResult + "...blastOff.exe");
-    $(".translation-reversed").fadeIn();
+    $("#result").hide();
+    $("#reversed-result").show();
+    $("#first-name").text(firstName);
+    $("#translation-reversed").text(reversedResult);
+    $("#translation-reversed").fadeIn();
   });
 });
