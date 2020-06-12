@@ -9,7 +9,7 @@ const robotese = function(translation){
       const str = index.toString();
 
       if (str.includes("3") === true) {
-          robotArray.push(" Won't you be my neighbor?");
+          robotArray.push(" Won't you be my neighbor? ");
       } else if (str.includes("2") === true) {
           robotArray.push(" Boop!");
       } else if (str.includes("1") === true) {
@@ -36,6 +36,6 @@ $(document).ready(function() {
       const translation = $("#numberInput").val();
       const result = robotese(translation);
       $(".translation").text("Dearest " + firstName + ": " + result);
-      $("#result").show();
+      $("#result").slideDown("slow");
   });
 });
