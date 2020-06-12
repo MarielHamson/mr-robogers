@@ -69,7 +69,9 @@ _This project will take user submitted numbers and return a list of all numbers 
 
 ## Known Bugs
 
-_No known bugs or issues_
+_Page rendering issue: If the user enters a large number, all content may not fit on the viewport and the user is not able to scroll to see it. Likely CSS property overriding overflow control_
+
+_Possible workaround: resize screen to allow all content to fit on screen (closing any panes such as DevTools)_
 
 ## Support and contact details
 
