@@ -10,6 +10,13 @@ _This project will take user submitted numbers and return a list of all numbers 
 
 
 ---
+* _The user enters a number and receives back a list of numbers ranging from 0 to the number inputted_
+
+  * Input: 4
+  * Output: 0, 1, 2, 3, 4
+
+### Exceptions
+
 * _The user enters a number that is or contains the number 1, the entire number will be replaced by "Beep!"._ 
 
   * Input: 1
