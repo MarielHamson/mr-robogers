@@ -1,10 +1,10 @@
 // business logic
 
-const robotese = function(translation){
+const robotese = function(numberInput){
 
   let robotArray = [];
 
-  for (let index = 0; index <= translation; index += 1) {
+  for (let index = 0; index <= numberInput; index += 1) {
 
       const str = index.toString();
 
@@ -22,6 +22,28 @@ const robotese = function(translation){
   return robotArray;
   }
 
+const backwardsRobotese = function(reverseNumberInput){
+
+    let reversedRobotArray = [];
+  
+    for (let index = reverseNumberInput; index <= 0; index -= 1) {
+  
+        const str = index.toString();
+  
+        if (str.includes("3") === true) {
+            reversedRobotArray.push(" Won't you be my neighbor? ");
+        } else if (str.includes("2") === true) {
+            reversedRobotArray.push(" Boop!");
+        } else if (str.includes("1") === true) {
+            reversedRobotArray.push(" Beep!");
+        } else {
+            reversedRobotArray.push(" " + str);
+        }
+      }
+  
+    return reversedRobotArray;
+    }
+
 // UI logic
 
 $(document).ready(function() {
@@ -33,16 +55,18 @@ $(document).ready(function() {
 
   $("form#robot-lang").submit(function(event) {
       event.preventDefault();
-      const translation = $("#numberInput").val();
-      const result = robotese(translation);
+      const numberInput = $("#numberInput").val();
+      const result = robotese(numberInput);
       $(".translation").text("Dearest " + firstName + ": " + result);
       $("#result").slideDown("slow");
       $("#reversal").show();
-      console.log(typeof result)
   });
 
-  $("#reverse-button").click(function() {
-    const reversedTranslation = robotArray.reverse();
-    $(".translation-reversed").text("Is this better, " + firstName + "?: " + reversedTranslation + "...blastOff.exe");
+  $("#robot-lang-reversed").submit(function(event) {
+    event.preventDefault();
+    const reverseNumberInput = $("#reverseNumberInput").val();
+    const reversedResult = backwardsRobotese(reverseNumberInput);
+    $(".translation-reversed").text("Is this better, " + firstName + "?: " + reversedResult + "...blastOff.exe");
+    $(".translation-reversed").fadeIn();
   });
 });
