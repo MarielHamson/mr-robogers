@@ -6,7 +6,7 @@
 
 ## Description
 
-_This project will take user submitted numbers and return a list of all numbers from zero to that number (integers only) and also employ a substition code based on replacing certain numbers with robot-sounding words. This project was completed for Epicodus code camp to showcase Arrays and Looping. Here are the specs:_
+_This project will take user submitted numbers and return a list of all numbers from zero to that number (inclusive, integers only) and also employ a substition code based on replacing certain numbers with robot-sounding words. This project was completed for Epicodus code camp to showcase Arrays and Looping. Here are the specs:_
 
 
 ---
@@ -15,7 +15,13 @@ _This project will take user submitted numbers and return a list of all numbers 
   * Input: 4
   * Output: 0, 1, 2, 3, 4
 
-### Exceptions
+* _The user is asked for their name before being asked for a number and the name is inserted in the response_
+  * Input: Mars
+  * Output: "Dear Mars: 0, Beep!, Boop!, Won't you be my neighbor?"
+---
+
+
+### Substitutions
 
 * _The user enters a number that is or contains the number 1, the entire number will be replaced by "Beep!"._ 
 
@@ -37,6 +43,11 @@ _This project will take user submitted numbers and return a list of all numbers 
   
   * Input: 13
   * Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?
+
+* The user enters a number and clicks "Reverse it"
+
+  * Input: 5
+  * Output: 5, 4, Won't you be my neighbor?, Boop!, Beep!, 0
 ---
 
 
