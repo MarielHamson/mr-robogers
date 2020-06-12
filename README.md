@@ -8,46 +8,15 @@
 
 _This project will take user submitted numbers and return a list of all numbers from zero to that number (inclusive, integers only) and also employ a substition code based on replacing certain numbers with robot-sounding words. This project was completed for Epicodus code camp to showcase Arrays and Looping. Here are the specs:_
 
-
----
-* _The user enters a number and receives back a list of numbers ranging from 0 to the number inputted_
-
-  * Input: 4
-  * Output: 0, 1, 2, 3, 4
-
-* _The user is asked for their name before being asked for a number and the name is inserted in the response_
-  * Input: Mars
-  * Output: "Dear Mars: 0, Beep!, Boop!, Won't you be my neighbor?"
----
-
-
-### Substitutions
-
-* _The user enters a number that is or contains the number 1, the entire number will be replaced by "Beep!"._ 
-
-  * Input: 1
-
-  * Output: 0, Beep!
-
-* _The user enters a number that is or contains the number 2, the entire number will be replaced by "Boop!"._
-
-  * Input: 2
-  * Output: 0, Beep!, Boop!
-
-* _The user enters a number that is or contains the number 3, the entire number will be replaced by "Won't you be my neighbor?"._
-
-  * Input: 3
-  * Output: 0, Beep!, Boop!, Won't you be my neighbor?
-
-* _The user enters a number which contains multiple digits above, the larger number's rule will supercede all others_
-  
-  * Input: 13
-  * Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?
-
-* The user enters a number and clicks "Reverse it"
-
-  * Input: 5
-  * Output: 5, 4, Won't you be my neighbor?, Boop!, Beep!, 0
+| Behavior | Input | Output|
+|----------|-------|-------|
+| The user enters a number and receives back a list of numbers ranging from 0 to the number inputted | 4 | 0, 1, 2, 3, 4 |
+| The user is asked for their name before being asked for a number and the name is inserted in the response | Mars | "Dear Mars: [coded response] |
+| The user enters a number that is or contains the number 1, the entire number will be replaced by "Beep!". | 1 | 0, Beep!
+| The user enters a number that is or contains the number 2, the entire number will be replaced by "Boop!".| 2 | 0, Beep!, Boop! |
+| The user enters a number that is or contains the number 3, the entire number will be replaced by "Won't you be my neighbor?".| 3 | 0, Beep!, Boop!, Won't you be my neighbor? |
+| The user enters a number which contains multiple digits above, the larger number's rule will supercede all others | 13 | 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor? |
+| The user enters a number and clicks "Reverse it" | 5 | 5, 4, Won't you be my neighbor?, Boop!, Beep!, 0 |
 ---
 
 
@@ -64,7 +33,7 @@ _This project will take user submitted numbers and return a list of all numbers 
 
 ### Via Browser 
 * _Navigate to https://MarielHamson.github.io/mr-robogers to see the web app in browser_
-* _ You can right-click anywhere on the page, choose Inspect and open the Elements tab in order to view the code._
+* _You can right-click anywhere on the page, choose Inspect and open the Elements tab in order to view the code._
 
 
 ## Known Bugs
