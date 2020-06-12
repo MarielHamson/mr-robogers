@@ -58,6 +58,9 @@ p {
   padding-right: 20px;
 }
 
+#numberInput {
+  display: flex;
+}
 #result {
     display: none;
 }
