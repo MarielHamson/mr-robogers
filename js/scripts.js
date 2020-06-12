@@ -31,11 +31,18 @@ $(document).ready(function() {
       $("#robot-lang").show();
   });
 
-  $("form#robot-lang").submit(function() {
+  $("form#robot-lang").submit(function(event) {
       event.preventDefault();
       const translation = $("#numberInput").val();
       const result = robotese(translation);
       $(".translation").text("Dearest " + firstName + ": " + result);
       $("#result").slideDown("slow");
+      $("#reversal").show();
+      console.log(typeof result)
+  });
+
+  $("#reverse-button").click(function() {
+    const reversedTranslation = robotArray.reverse();
+    $(".translation-reversed").text("Is this better, " + firstName + "?: " + reversedTranslation + "...blastOff.exe");
   });
 });
