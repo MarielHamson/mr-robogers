@@ -59,11 +59,12 @@ $(document).ready(function() {
       $(".translation").text("Dearest " + firstName + ": " + result);
       $("#result").slideDown("slow");
       $("#reversal").show();
+      $("#reversed-result").hide();
   });
 
-  $("#robot-lang-reversed").submit(function(event) {
+  $("button#reverse-button").click(function(event) {
     event.preventDefault();
-    const reverseNumberInput = $("#reverse-number-input").val();
+    const reverseNumberInput = $("#numberInput").val();
     const reversedResult = backwardsRobotese(reverseNumberInput);
     $("#result").hide();
     $("#reversed-result").show();
