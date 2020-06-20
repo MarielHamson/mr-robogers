@@ -16,25 +16,25 @@ const robotese = function(numberInput){
   }
 
   return robotArray;
-  };
+};
 
 const backwardsRobotese = function(reverseNumberInput){
-    let reversedRobotArray = [];
-    for (let index = reverseNumberInput; index >= 0; index -= 1) {
-      const str = index.toString();
-      if (str.includes("3") === true) {
-        reversedRobotArray.push(" Won't you be my neighbor? ");
-    } else if (str.includes("2") === true) {
-        reversedRobotArray.push(" Boop!");
-    } else if (str.includes("1") === true) {
-        reversedRobotArray.push(" Beep!");
-    } else {
-        reversedRobotArray.push(" " + str);
-        }
+  let reversedRobotArray = [];
+  for (let index = reverseNumberInput; index >= 0; index -= 1) {
+    const str = index.toString();
+    if (str.includes("3") === true) {
+      reversedRobotArray.push(" Won't you be my neighbor? ");
+  } else if (str.includes("2") === true) {
+      reversedRobotArray.push(" Boop!");
+  } else if (str.includes("1") === true) {
+      reversedRobotArray.push(" Beep!");
+  } else {
+      reversedRobotArray.push(" " + str);
       }
+    }
 
-    return reversedRobotArray;
-    };
+  return reversedRobotArray;
+};
 
 // UI logic
 
