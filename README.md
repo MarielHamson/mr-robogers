@@ -10,13 +10,14 @@ _This project will take user submitted numbers and return a list of all numbers 
 
 | Behavior | Input | Output|
 |----------|-------|-------|
-| The user enters a number and receives back a list of numbers ranging from 0 to the number inputted | 4 | 0, 1, 2, 3, 4 |
-| The user is asked for their name before being asked for a number and the name is inserted in the response | Mars | "Dear Mars: [coded response] |
-| The user enters a number that is or contains the number 1, the entire number will be replaced by "Beep!". | 1 | 0, Beep!
-| The user enters a number that is or contains the number 2, the entire number will be replaced by "Boop!".| 2 | 0, Beep!, Boop! |
-| The user enters a number that is or contains the number 3, the entire number will be replaced by "Won't you be my neighbor?".| 3 | 0, Beep!, Boop!, Won't you be my neighbor? |
-| The user enters a number which contains multiple digits above, the larger number's rule will supercede all others | 13 | 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor? |
-| The user enters a number and clicks "Reverse it" | 5 | 5, 4, Won't you be my neighbor?, Boop!, Beep!, 0 |
+| Print list of numbers ranging from 0 to the number inputted by user | 4 | 0, 1, 2, 3, 4 |
+| Print name in the coded response | Mars | "Dear Mars: [coded response] |
+| Replace the entire number with "Beep!" if a number that is or contains the number 1 is entered  | 1 | 0, Beep!
+| Replace the entire number with "Boop!" if number that is or contains the number 2 is entered | 2 | 0, Beep!, Boop! |
+| Replace the entire number with "Won't you be my neighbor?" if a number that is or contains the number 3 is entered | 3 | 0, Beep!, Boop!, Won't you be my neighbor? |
+| The larger number's rule will supercede all others, if the user enters a number which contains multiple digits above  | 13 | 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor? |
+| Reverse the user input when the user clicks "Reverse it" | 5 | 5, 4, Won't you be my neighbor?, Boop!, Beep!, 0 |
+
 ---
 
 
